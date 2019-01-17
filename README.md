@@ -37,3 +37,15 @@ In Firebase's website, we select Authentication from the menu on the left, and t
   - *Group Presentations*, containing the PDF versions of the group presentations slides.
   
 There is also a wiki for further explanations on every topic, where information will be added as we develop the app.
+
+# Authors and contact.
+- Tommy Ernsund.
+- Viking Forsman.
+- Joaquín García Benítez.
+	LinkedIn: https://www.linkedin.com/in/jotagarcia16/
+	Email: jgarcia@laisladelfaro.com
+- Iván Muñiz.
+- Mathias Svensson Karlsson.
+- Clara Torre García-Barredo.
+	LinkedIn: https://www.linkedin.com/in/clara-torre-garcia-barredo/
+	Email: clara.torreg@alumnos.unican.es
