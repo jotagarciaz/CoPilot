@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">CoPilotApp</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Map fragment -->
+    <string name="button_line">Line</string>
+    <string name="button_curve">Curve</string>
+    <string name="button_load">Load</string>
+    <string name="button_unload">Unload</string>
+    <string name="button_wait">Wait</string>
+    <string name="button_start_point">Start</string>
+    <string name="button_finish_point">Finish</string>
+    <string name="button_interest_point">Interest</string>
+    <string name="button_delete_point">Remove</string>
+    <string name="button_toggle">Toggle map type</string>
+    <string name="button_set_to_current_location">Set to current location</string>
+    <string name="textView_marker_location">Pick a location</string>
+    <string name="textView_marker_location_set">lat/lng: (%s , %s)</string>
+
+    <string name="settings">Settings</string>
+    <string name="machines">Machines</string>
+    <string name="logout">Log out</string>
+
+    <string name="button_path">Edit path</string>
+    <string name="button_gcode">Edit G-Code</string>
+    <string name="image_preview_desc">Image preview desc</string>
+
+    <string name="signed_in_fmt">Signed in as: %s</string>
+    <string name="signed_out">Signed out</string>
+
+    <string name="popup_edit_name">Name</string>
+    <string name="popup_edit_desc">Description</string>
+
+    <string name="preference_file_key">com.mdh.ivanmuniz.copilotapp.LOCALPREF</string>
+    <string name="preference_favorite_list">local_favorite_list</string>
+
+    <!--fragment_machines.xml-->
+    <string name="status">Reservation status</string>
+    <string name="name">Machines</string>
+
+    <string name="label_emailpassword">Email/Password Authentication</string>
+    <string name="desc_emailpassword">Use an email and password to authenticate with Firebase.</string>
+
+    <string name="sign_in">Sign In</string>
+    <string name="create_account">Create Account</string>
+    <string name="sign_out">Take me to sign in</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="emailpassword_title_text">Email and Password</string>
+    <string name="emailpassword_status_fmt">You have registered correctly. You can sign in now.</string>
+    <string name="auth_failed">Authentication failed</string>
+
+    <!--fragment_gcode.xml-->
+    <string name="point">Point</string>
+    <string name="type">Type</string>
+    <string name="coordinates">Coordinates</string>
+    <string-array name="curveDirection">
+        <item>Inwards</item>
+        <item>Outwards</item>
+    </string-array>
+</resources>

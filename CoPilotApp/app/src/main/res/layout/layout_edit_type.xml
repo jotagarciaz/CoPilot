@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="7dp">
+
+        <RadioButton
+            android:id="@+id/checkBox_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Line" />
+
+        <RadioButton
+            android:id="@+id/checkBox_curve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Curve" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editText_radius"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_marginStart="12dp"
+        android:ems="10"
+        android:hint="Radius"
+        android:inputType="textPersonName|numberDecimal"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/radioGroup"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/editText_radius"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"/>
+
+
+</android.support.constraint.ConstraintLayout>

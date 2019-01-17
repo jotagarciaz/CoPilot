@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".map.MapFragment">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            layout="@layout/toolbar"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/layoutMap"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/layoutMenu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/mapView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/imageButton_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="12dp"
+                android:alpha="0.8"
+                android:background="#fff"
+                android:padding="8dp"
+                android:contentDescription="map"
+                app:srcCompat="@drawable/ic_map"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView_marker_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layoutMap"
+            android:alpha="0.7"
+            android:background="@color/colorPrimary"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:text="@string/textView_marker_location"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"/>
+
+        <ImageButton
+            android:id="@+id/imageButton_set_to_current_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:alpha="0.8"
+            android:background="#fff"
+            android:padding="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_marker_location"
+            android:contentDescription="set to current location"
+            app:srcCompat="@drawable/ic_my_location" />
+
+        <FrameLayout
+            android:id="@+id/layoutMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.darwindeveloper.horizontalscrollmenulibrary.custom_views.HorizontalScrollMenuView
+                android:id="@+id/horizontal_menu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:backgroundMenuColor="@color/colorPrimary"
+                app:backgroundNotifications="@color/colorPrimary"
+                app:icon_height="50dp"
+                app:icon_width="50dp"
+                app:item_backgroundColor="@color/colorPrimary"
+                app:item_colorSelected="@color/colorPrimaryDark"
+                app:item_textColor="#fff"
+                app:item_textSize="7sp" />
+
+        </FrameLayout>
+
+    </android.support.constraint.ConstraintLayout>
+    <!-- Slide in list -->
+    <LinearLayout
+        android:layout_width="@dimen/slide_menu_width"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="end">
+
+        <!-- List header -->
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white">
+
+            <LinearLayout
+                android:id="@+id/header_app_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:minHeight="?attr/actionBarSize"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal"
+                app:theme="@style/ToolBarStyle"
+                android:gravity="end|center_vertical">
+
+                <android.support.v7.widget.SearchView
+                    android:id="@+id/map_path_list_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:icon="@drawable/ic_search_white_24dp"
+                    android:title="Search"
+                    app:showAsAction="ifRoom|collapseActionView"
+                    android:visible="true">
+                </android.support.v7.widget.SearchView>
+                <!--<ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_close_black_24dp"
+                    android:layout_marginEnd="@dimen/list_item_margin"
+                    android:background="@null"/>-->
+
+            </LinearLayout>
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:layout_constraintTop_toBottomOf="@id/header_app_bar"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:background="@color/colorPrimary">
+
+            </LinearLayout>-->
+        </android.support.constraint.ConstraintLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/map_path_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:nestedScrollingEnabled="true"
+            tools:targetApi="lollipop" />
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:visibility="visible"
+    android:layout_marginTop="8dp"
+    android:orientation="vertical">
+    <!-- Contracted -->
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/item_contracted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/list_item_margin"
+        android:layout_marginEnd="@dimen/list_item_margin"
+        android:visibility="visible">
+        <!-- Name and description -->
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/list_item_title_size"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+        <TextView
+            android:id="@+id/item_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/list_item_desc_size"
+            app:layout_constraintTop_toBottomOf="@id/item_name"
+            app:layout_constraintStart_toStartOf="@id/item_name"
+            />
+        <!-- Favorite button and date -->
+        <TextView
+            android:id="@+id/item_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/list_item_date_size"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+        <ToggleButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/item_favorite"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textOn=""
+            android:textOff=""
+            app:layout_constraintTop_toBottomOf="@id/item_date"
+            app:layout_constraintEnd_toEndOf="@id/item_date"/>
+    </android.support.constraint.ConstraintLayout>
+
+    <!-- Expanded -->
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/item_expanded"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/list_item_margin"
+        app:layout_constraintTop_toBottomOf="@+id/item_contracted"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/item_preview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button_path"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/list_item_margin"
+            android:layout_marginStart="@dimen/list_item_margin"
+            android:text="@string/button_path"
+            android:textAppearance="@android:style/TextAppearance.Theme.Dialog"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="@dimen/list_item_button_text_size"
+            android:textStyle="bold"
+            android:drawablePadding="@dimen/list_item_margin"
+            android:drawableEnd="@drawable/ic_build_black_24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/button_gcode"
+            app:layout_constraintTop_toBottomOf="@+id/item_preview" />
+
+        <Button
+            android:id="@+id/button_gcode"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/list_item_margin"
+            android:text="@string/button_gcode"
+            android:textAppearance="@android:style/TextAppearance.Theme.Dialog"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="@dimen/list_item_button_text_size"
+            android:textStyle="bold"
+            android:drawablePadding="@dimen/list_item_margin"
+            android:drawableEnd="@drawable/ic_code_black_24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/button_path"
+            app:layout_constraintTop_toBottomOf="@+id/item_preview" />
+
+        <!-- temporary hard coded x -->
+        <ImageButton
+            android:id="@+id/button_delete"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/list_item_margin"
+            android:src="@drawable/ic_delete_forever_black_24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/item_preview" />
+
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <CheckBox
+        android:id="@+id/checkBox_load"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="Load"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBox_unload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unload"
+        app:layout_constraintStart_toStartOf="@+id/checkBox_load"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_load" />
+
+    <CheckBox
+        android:id="@+id/checkBox_wait"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wait"
+        app:layout_constraintStart_toStartOf="@+id/checkBox_unload"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_unload" />
+
+    <CheckBox
+        android:id="@+id/checkBox_interest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Interest"
+        app:layout_constraintStart_toStartOf="@+id/checkBox_wait"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_wait" />
+
+</android.support.constraint.ConstraintLayout>
