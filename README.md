@@ -75,6 +75,8 @@ There is also a wiki for further explanations on every topic, where information 
 	LinkedIn: https://www.linkedin.com/in/jotagarcia16/
 	Email: jgarcia@laisladelfaro.com
 - Iván Muñiz.
+	LinkedIn: https://www.linkedin.com/in/ivanmuniz96
+	Email: ivanmr_96@live.com.mx
 - Mathias Svensson Karlsson.
 	Email: svenssonkarlsson.mathias@gmail.com
 - Clara Torre García-Barredo.
