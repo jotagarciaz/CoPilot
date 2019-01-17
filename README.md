@@ -26,6 +26,36 @@ Next you will need to open Android Studio, and select "Open an existing Android 
 
 In Firebase's website, we select Authentication from the menu on the left, and then Configure new log in. After that, we select "email/password" and abilitate the option. The second option does not need to be abilitated. Then save.
 
+### Firebase cloud function installation
+For a detailed guide, follow this guide: https://firebase.google.com/docs/functions/get-started
+
+You require the following tools:
+
+* Node.js framework
+* npm 
+* Firebase CLI
+
+1. First you need to have the Node.js framework installed (v6 or v8 required), which is available here
+- https://nodejs.org/en/
+
+	*Optional* 1.1 The previous install should include npm as well, otherwise npm can be found here
+	- https://www.npmjs.com/
+
+2. After these tools are installed, open the local command line and run the following command:
+```
+npm install -g firebase-tools
+```
+3. After this installation is complete run the following command:
+```
+firebase login
+```
+4. This should bring you to a login screen for Firebase, login and select the correct database.
+5. Browse to the location of the directory with the Cloud functions *(/Cloud/ directory in the github)*
+6. Run the following command to deploy the functions to the database
+```
+firebase deploy --only functions
+```
+**If any errors are encountered with this process, consult the firebase guide linked above.**
 
 
 # Git folder structure 
@@ -46,6 +76,7 @@ There is also a wiki for further explanations on every topic, where information 
 	Email: jgarcia@laisladelfaro.com
 - Iván Muñiz.
 - Mathias Svensson Karlsson.
+	Email: svenssonkarlsson.mathias@gmail.com
 - Clara Torre García-Barredo.
 	LinkedIn: https://www.linkedin.com/in/clara-torre-garcia-barredo/
 	Email: clara.torreg@alumnos.unican.es
