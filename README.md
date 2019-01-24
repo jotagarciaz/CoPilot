@@ -69,16 +69,17 @@ firebase deploy --only functions
 There is also a wiki for further explanations on every topic, where information will be added as we develop the app.
 
 # Authors and contact.
-- Tommy Ernsund.
-- Viking Forsman.
-- Joaquín García Benítez.
-	LinkedIn: https://www.linkedin.com/in/jotagarcia16/
-	Email: jgarcia@laisladelfaro.com
-- Iván Muñiz.
-	LinkedIn: https://www.linkedin.com/in/ivanmuniz96
-	Email: ivanmr_96@live.com.mx
-- Mathias Svensson Karlsson.
-	Email: svenssonkarlsson.mathias@gmail.com
-- Clara Torre García-Barredo.
-	LinkedIn: https://www.linkedin.com/in/clara-torre-garcia-barredo/
-	Email: clara.torreg@alumnos.unican.es
+- Tommy Ernsund
+  - LinkedIn: https://www.linkedin.com/in/TommyErnsund
+- Viking Forsman
+- Joaquín García Benítez
+  - LinkedIn: https://www.linkedin.com/in/jotagarcia16/
+  - Email: <jgarcia@laisladelfaro.com>
+- Iván Muñiz
+  - LinkedIn: https://www.linkedin.com/in/ivanmuniz96
+  - Email: <ivanmr_96@live.com.mx>
+- Mathias Svensson Karlsson
+  - Email: <svenssonkarlsson.mathias@gmail.com>
+- Clara Torre García-Barredo
+  - LinkedIn: https://www.linkedin.com/in/clara-torre-garcia-barredo/
+  - Email: <clara.torreg@alumnos.unican.es>
