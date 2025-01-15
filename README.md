@@ -73,8 +73,7 @@ There is also a wiki for further explanations on every topic, where information 
   - LinkedIn: https://www.linkedin.com/in/TommyErnsund
 - Viking Forsman
 - Joaquín García Benítez
-  - LinkedIn: https://www.linkedin.com/in/jotagarcia16/
-  - Email: <jgarcia@laisladelfaro.com>
+  - LinkedIn: https://www.linkedin.com/in/jotagarciaz/
 - Iván Muñiz
   - LinkedIn: https://www.linkedin.com/in/ivanmuniz96
   - Email: <ivanmr_96@live.com.mx>
